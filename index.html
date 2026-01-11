@@ -3,121 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Naomi's homepage</title>
+  <title>Naomi Murachi | AI for Smart Land Use</title>
   <style>
+    :root {
+      --primary-green: #2ecc71;
+      --deep-forest: #1b4d3e;
+      --sky-blue: #3498db;
+      --light-mint: #f0fff4;
+      --text-main: #2c3e50;
+      --accent-gray: #f8fafc;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-      background: #f5f7fa;
-      color: #333;
+      line-height: 1.7;
+      background: var(--light-mint);
+      color: var(--text-main);
     }
+
     header {
-      background: #174745;
+      background: linear-gradient(135deg, var(--deep-forest) 0%, #27ae60 100%);
       color: #ffffff;
-      padding: 2rem;
+      padding: 5rem 2rem;
       text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin: 1rem auto 0;
+    }
+
     section {
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background: #fff;
-      border-radius: 8px;
+      margin: -3rem auto 4rem;
+      padding: 3rem;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
     }
+
     h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 0.5rem;
+      color: var(--deep-forest);
+      font-size: 1.8rem;
+      border-left: 5px solid var(--primary-green);
+      padding-left: 1rem;
+      margin-top: 2.5rem;
     }
-    ul {
-      list-style: square;
-      padding-left: 1.2rem;
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 1.5rem 0;
     }
+
     .tag {
-      display: inline-block;
-      background: #e5e7eb;
-      padding: 0.3rem 0.6rem;
-      margin: 0.2rem;
-      border-radius: 4px;
+      background: #e8f5e9;
+      color: #2e7d32;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
       font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid #c8e6c9;
+      transition: 0.3s;
     }
+
+    .tag:hover {
+      background: var(--primary-green);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    /* Research Box Styling */
+    .research-box {
+      background: var(--accent-gray);
+      border: 1.5px solid #dcdde1;
+      padding: 2.5rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+      position: relative;
+    }
+    .research-box::before {
+      content: "RESEARCH VISION";
+      position: absolute;
+      top: -12px;
+      left: 20px;
+      background: #27ae60;
+      color: white;
+      padding: 2px 15px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    .abstract-text {
+      font-style: italic;
+      color: #57606f;
+      border-left: 3px solid #ced6e0;
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .academic-title {
+      font-size: 1.4rem;
+      color: var(--deep-forest);
+      font-weight: 700;
+      margin-top: 0;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+    .feature-list li {
+      margin-bottom: 0.8rem;
+    }
+    .feature-list li::before {
+      content: "✓";
+      color: var(--primary-green);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 3rem;
+      color: #7f8c8d;
       font-size: 0.9rem;
-      color: #666;
+    }
+
+    a {
+      color: var(--primary-green);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Naomi's homepage</h1>
-  <p>Aspiring AI & Cloud Engineer for Smart Land Use</p>
+  <h1>Naomi Murachi</h1>
+  <p>Aspiring AI & Cloud Engineer | Specializing in Smart Land Use & Sustainable Agriculture</p>
 </header>
 
 <section>
   <h2>About Me</h2>
   <p>
-    I am preparing for the Master of Artificial Intelligence for Land Use. 
-    With a background in software development and cloud basics, I am passionate about applying AI, 
-    IoT, and cloud technologies to real-world applications like smart land use and agricultural.
-    I am also interested in generating effects of motion and music.
+    I am a researcher and developer dedicated to the <strong>Master of Artificial Intelligence for Land Use</strong>. 
+    By synthesizing <strong>IoT sensor control (C/C++)</strong>, <strong>Computer Vision (Python)</strong>, 
+    and <strong>Real-time Visualization (Unity)</strong>, I build systems that allow us to "hear the voice of the soil."
   </p>
-</section>
+  <p>
+    My work focuses on <strong>Multi-Sensory AI</strong>—optimizing agricultural production through data-driven insights 
+    visualized in Digital Twins, ensuring sustainable land use for future generations.
+  </p>
 
-<section>
-  <h2>Skills</h2>
-  <div>
-    <span class="tag">C</span>
-    <span class="tag">C++</span>
-    <span class="tag">C#(Unity)</span>
-    <span class="tag">HTML</span>
-    <span class="tag">Java Script</span>
-    <span class="tag">Python</span>
-    <span class="tag">Linux</span>
-    <span class="tag">Cloud Fundamentals</span>
-    <span class="tag">AWS / Azure (basic)</span>
+  <h2>Technical Arsenal</h2>
+  <div class="tag-container">
+    <span class="tag">Python (Machine Learning/AI)</span>
+    <span class="tag">C / C++ (Hardware & IoT)</span>
+    <span class="tag">C# (Unity & Digital Twins)</span>
+    <span class="tag">AWS / Azure Cloud</span>
+    <span class="tag">Sound Design & Spatial Audio</span>
+    <span class="tag">Linux System Admin</span>
+    <span class="tag">HTML / JavaScript</span>
+  </div>
+
+  <h2>Thesis Prototype</h2>
+  <div class="research-box">
+    <h3 class="academic-title">Multi-Sensory Digital Twins for Harvest Optimization</h3>
+    <p class="abstract-text">
+      "Integrating AI, IoT, and Human-Centric Feedback to maximize Land Use Efficiency in protected cropping systems."
+    </p>
     
+    <p><strong>Research Objectives:</strong></p>
+    <ul class="feature-list">
+      <li><strong>Predictive Modeling:</strong> Fusing visual data with environmental IoT sensors to forecast the optimal cucumber harvest window.</li>
+      <li><strong>Cognitive Ergonomics:</strong> Utilizing Unity-based VFX and Spatial Audio to reduce farmer cognitive load during harvest.</li>
+      <li><strong>Waste Reduction:</strong> Tailoring harvest timing to specific market requirements to minimize post-harvest loss.</li>
+      <li><strong>Scalability:</strong> Developing cloud-native architectures for regional agricultural monitoring.</li>
+    </ul>
     
+    <p><small><em>Targeting Lincoln University - Master of AI for Land Use (2026)</em></small></p>
+  </div>
+
+  <h2>Contact & Collaboration</h2>
+  <div class="contact-grid">
+    <div>
+      <strong>GitHub</strong><br>
+      <a href="https://github.com/naomuhibu">naomuhibu</a>
+    </div>
+    <div>
+      <strong>My Blog</strong><br>
+      <a href="https://naomuhibu5.wordpress.com">wordpress site</a>
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>AI + IoT Mini Project (in progress)</strong><br/>
-      Small project using sensor data, basic AI model, and cloud deployment.
-    </li>
-    <li>
-      <strong>Cloud Practice Labs</strong><br/>
-      Hands-on practice with AWS and Azure for networking, compute, and storage.
-    </li>
-  </ul>
-</section>
-
-<section>
-  <h2>Learning Focus</h2>
-  <ul>
-    <li>Artificial Intelligence (Machine Learning fundamentals)</li>
-    <li>Internet of Things (sensor data, edge devices)</li>
-    <li>Cloud Computing for scalable systems</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>
-    GitHub: <em>naomuhibu</em><br/>
-    Email: <em>naomuhibu@hotmail.com</em><br/>
-    Web site: <em>https://naomuhibu5.wordpress.com</em>
-  </p>
-</section>
-
 <footer>
-  © 2026 Naomi Murachi 
+  © 2026 Naomi Murachi | Innovating Agriculture through AI & Design
 </footer>
 
 </body>
